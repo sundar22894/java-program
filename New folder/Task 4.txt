@@ -1,0 +1,167 @@
+
+Koel.5678 Thread
+=========
+Thread is a lightweight process in execution.
+
+
+Multiprogramming:-
+-------------------
+In this multiprogramming system, there are one or more programs loaded in the main memory(RAM) which are taken by CPU for execution. However, technically one CPU core can execute only one program at a time. Now to maximize the use of CPU time, a new engineering was implemented where multiple programs will be taken up by the CPU for execution in Synchronous way, ie, CPU will use the Process Context Switching + Time sharing to exceute all the programs one after the another in CYCLIC ROTATION that gives the illusion of parallel execution.
+
+
+Multiprocessing:- 
+---------------------
+This term is mostly used for harware rather than software process. It means, in modern computer we embed multiple physical processing UNITs(CPU cores). Thus multiple processors can execute multiple processes parallely. This refers to asynchronous execution.
+
+Multithreading:-
+-----------------
+This is the most advance way of having parallel execution. In this a single process is segmented into multiple threads(sub-processes) and redirects each of the threads to each CPU cores.
+
+Multitasking:-
+---------------
+This is a very generalised temr. It refers to having multiple programs, processes, tasks,threads.
+
+
+
+
+
+
+
+
+package newpack;
+
+public class ThreadingDemo extends Thread
+{
+public void run()
+{
+for(int i=0; i<10;i++)
+{
+Thread t = Thread.currentThread();
+System.out.println(t.getName()+" "+i);
+}
+}
+
+public static void main(String[] args)//main thread
+{
+ThreadingDemo obj1 = new ThreadingDemo();
+ThreadingDemo obj2 = new ThreadingDemo();
+
+obj1.setName("child thread 1");// 1st thread object
+obj2.setName("child thread 2");//2nd thread object
+System.out.println(obj1.isAlive());//false
+System.out.println(obj2.isAlive());//false
+obj1.start();
+obj2.start();
+System.out.println(obj1.isAlive());//true
+System.out.println(obj2.isAlive());//true
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package newpack;
+
+public class ThreadingDemo implements Runnable
+{
+public void run()
+{
+for(int i=0; i<10;i++)
+{
+Thread t = Thread.currentThread();
+System.out.println(t.getName()+" "+i);
+}
+}
+
+public static void main(String[] args)//main thread
+{
+ThreadingDemo obj1 = new ThreadingDemo();
+ThreadingDemo obj2 = new ThreadingDemo();
+
+Thread t1 = new Thread(obj1);
+Thread t2 = new Thread(obj2);
+
+t1.setName("child thread 1");// 1st thread object
+t2.setName("child thread 2");//2nd thread object
+
+t1.start();
+t2.start();
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+package newpack;
+
+class syncEx
+{
+
+public synchronized static void display(String arr[])
+{
+for(int i=0; i<arr.length; i++)
+{
+try
+{
+Thread.sleep(4000);
+
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+Thread t = Thread.currentThread();
+System.out.println(t.getName()+":"+ arr[i]);
+}
+}
+}
+
+
+public class SyncDemo extends Thread
+{
+String val[]={"enter pin","enter name","enter amount","collect cash","exit"};
+public void run()
+{
+syncEx.display(val);
+}
+
+public static void main(String[] args) 
+{
+SyncDemo d1 = new SyncDemo();
+SyncDemo d2 = new SyncDemo();
+
+d1.setName("Prabhat");
+d2.setName("Jothi");
+d1.start();
+d2.start();
+
+
+
+}
+
+}
+
+
+
+

@@ -1,0 +1,177 @@
+
+Tasks for today
+= = = = = = = = = = = = 
+1.	Write a note on PreparedStatement and ResultSetMetaData interfaces with code snippets.
+2.	Write a note on DDL, DML, DQL, DDL with code snippets.
+3.	Write a note on HTML , CSS and Javascript.
+4.	Write a code to fetch the data from H2 and put it in any collection object and display it.
+5.	Describe the different approaches of String processing.
+6.	What is the difference between System.out ,System.err and System.in?
+7.	What is the purpose of the System class?
+8.	Which is the abstract parent class of FileWriter ?
+9.	Which class is used to read streams of characters from a file?
+10.	Which class is used to read streams of raw bytes from a file?
+11.	What are the differences between FileInputStream/FileOutputStream and RandomAccessFile
+12.	Write a note on Channels and Buffer with example.
+
+
+
+
+GOBAL.1234 1,The PreparedStatement interface is a subinterface of Statement. It is used to execute parameterized query.
+
+Let's see the example of parameterized query:
+
+String sql="insert into emp values(?,?,?)"; 
+As you can see, we are passing parameter (?) for the values. Its value will be set by calling the setter methods of PreparedStatement.
+========================================
+Java ResultSetMetaData Interface
+The metadata means data about data i.e. we can get further information from the data.
+
+If you have to get metadata of a table like total number of column, column name, column type etc. , ResultSetMetaData interface is useful because it provides methods to get metadata from the ResultSet object.
+========================================================================================================================================================================================================================\
+2,
+DDL(Data Definition Language) : DDL or Data Definition Language actually consists of the SQL commands that can be used to define the database schema. It simply deals with descriptions of the database schema and is used to create and modify the structure of database objects in database.
+Examples of DDL commands:
+
+CREATE – is used to create the database or its objects (like table, index, function, views, store procedure and triggers).
+DROP – is used to delete objects from the database.
+ALTER-is used to alter the structure of the database.
+TRUNCATE–is used to remove all records from a table, including all spaces allocated for the records are removed.
+COMMENT –is used to add comments to the data dictionary.
+RENAME –is used to rename an object existing in the database.
+DML(Data Manipulation Language) : The SQL commands that deals with the manipulation of data present in database belong to DML or Data Manipulation Language and this includes most of the SQL statements.
+Examples of DML:
+
+
+
+
+
+SELECT – is used to retrieve data from the a database.
+INSERT – is used to insert data into a table.
+UPDATE – is used to update existing data within a table.
+DELETE – is used to delete records from a database table.
+DCL(Data Control Language) : DCL includes commands such as GRANT and REVOKE which mainly deals with the rights, permissions and other controls of the database system.
+Examples of DCL commands:
+
+GRANT-gives user’s access privileges to database.
+REVOKE-withdraw user’s access privileges given by using the GRANT command.
+TCL(transaction Control Language) : TCL commands deals with the transaction within the database.
+Examples of TCL commands:
+
+COMMIT– commits a Transaction.
+ROLLBACK– rollbacks a transaction in case of any error occurs.
+SAVEPOINT–sets a savepoint within a transaction.
+SET TRANSACTION–specify characteristics for the transaction.
+====================================================================================================================================================================================
+3,An overview: HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. CSS is used to control presentation, formatting, and layout. JavaScript is used to control the behavior of different elements.
+=================================================================================================================================================================
+4,import java.sql.Connection; 
+import java.sql.DriverManager; 
+import java.sql.SQLException; 
+import java.sql.Statement; 
+
+public class H2jdbcCreateDemo { 
+// JDBC driver name and database URL 
+static final String JDBC_DRIVER = "org.h2.Driver"; 
+static final String DB_URL = "jdbc:h2:/Cloudscape/test"; 
+
+// Database credentials 
+static final String USER = "sa"; 
+static final String PASS = ""; 
+
+public static void main(String[] args) { 
+Connection conn = null; 
+Statement stmt = null; 
+try { 
+// STEP 1: Register JDBC driver 
+Class.forName(JDBC_DRIVER); 
+
+//STEP 2: Open a connection 
+System.out.println("Connecting to database..."); 
+conn = DriverManager.getConnection(DB_URL,USER,PASS); 
+
+//STEP 3: Execute a query 
+System.out.println("Creating table in given database..."); 
+stmt = conn.createStatement(); 
+String sql = "CREATE TABLE REGISTRATION " + 
+"(id INTEGER not NULL, " + 
+" first VARCHAR(255), " + 
+" last VARCHAR(255), " + 
+" age INTEGER, " + 
+" PRIMARY KEY ( id ))"; 
+stmt.executeUpdate(sql);
+System.out.println("Created table in given database..."); 
+
+// STEP 4: Clean-up environment 
+stmt.close(); 
+conn.close(); 
+} catch(SQLException se) { 
+//Handle errors for JDBC 
+se.printStackTrace(); 
+} catch(Exception e) { 
+//Handle errors for Class.forName 
+e.printStackTrace(); 
+} finally { 
+//finally block used to close resources 
+try{ 
+if(stmt!=null) stmt.close(); 
+} catch(SQLException se2) { 
+} // nothing we can do 
+try { 
+if(conn!=null) conn.close(); 
+} catch(SQLException se){ 
+se.printStackTrace(); 
+} //end finally try 
+} //end try 
+System.out.println("Goodbye!");
+} 
+}
+=========================================================================================================================
+5,here are two ways to create String object:
+By string literal
+By new keyword
+1) String Literal
+Java String literal is created by using double quotes. For Example:
+
+String s="welcome"; 
+Each time you create a string literal, the JVM checks the string constant pool first. If the string already exists in the pool, a reference to the pooled instance is returned. If string doesn't exist in the pool, a new string instance is created and placed in the pool. For example:
+
+String s1="Welcome"; 
+String s2="Welcome";//will not create new instance 
+java string literal
+In the above example only one object will be created. Firstly JVM will not find any string object with the value "Welcome" in string constant pool, so it will create a new object. After that it will find the string with the value "Welcome" in the pool, it will not create new object but will return the reference to the same instance.
+
+Note: String objects are stored in a special memory area known as string constant pool.
+
+To make Java more memory efficient (because no new objects are created if it exists already in string constant pool).
+
+2) By new keyword
+String s=new String("Welcome");//creates two objects and one reference variable 
+In such case, JVM will create a new string object in normal(non pool) heap memory and the literal "Welcome" will be placed in the string constant pool. The variable s will refer to the object in heap(non pool).
+============================================================================================================================
+6,On the other hand, System.err.println() will print to the standard error. If you are using a simple Java console application, both outputs will be the same (the command line or console) but you can reconfigure the streams so that for example, System.out still prints to the console but System.err writes to a file.
+=============================================================================================================================
+7,Java.lang.System class in Java. Among the facilities provided by the System class are standard input, standard output, and error output streams; access to externally defined properties and environment variables; a means of loading files and libraries; and a utility method for quickly copying a portion of an array.
+===================================================================================================================
+8,A FileWriter is a kind of OutputStreamWriter, which is a kind of Writer.
+========================================================================================================
+9,The InputStream is used to read data from a source and the OutputStream is used for writing data to a destination. Here is a hierarchy of classes to deal with Input and Output streams. The two important streams are FileInputStream and FileOutputStream
+============================================================================================================
+10,This is an example of how to read a File in a byte array using a [FileInputStream]. The FileInputStream obtains input bytes from a file in a file system. Reading a file in a byte array with a FileInputStream implies that you should:
+
+Create a new File instance by converting the given pathname string into an abstract pathname.
+Create a FileInputStream by opening a connection to an actual file, the file named by the path name name in the file system.
+Create a byte array with size equal to the file length.
+Use read(byte[] b) API method of FileInputStream to read up to certain bytes of data from this input stream into the byte array.
+====================================================================================================================
+11,RandomAccessFile treats the file as an array of bytes where it has the internal pointer. The fact that it treats it like a large array of bytes is what is unique about this class. FileInputStream however just reads the stream and returns the data. It is more suited to reading raw data like images etc. It does not treat the file as a large array, it just keeps tabs of where in the file it has read so far. With FileInputStream you would actually have to read the data and place it into an array to get the same style of access as RandomAccessFile.
+
+Performance wise I am not quite sure if there is much of a difference, but I would have to assume that FileInputStream would be faster in that it doesn't have to worry about the structure of an array and just returns raw data it reads. Less structure tends to be faster when it comes to things like this. Probably why it is recommended for image data
+===================================================================================================================
+12,Buffers provide a mechanism to store a fixed amount of primitive data elements in an in-memory container. In the NIO, all data is handled with buffers. When data is read, it is read directly into a buffer. When data is written, it is written into a buffer.
+
+Buffers work with channels. Channels are portals through which I/O transfers take place, and buffers are the sources or targets of those data transfers.
+
+The examples in this article use ByteBuffer and FileChannel classes. ByteBuffer is defined in the java.nio package and FileChannel in the java.nio.channels package. To read a file and move data to a target – the file is read into a buffer through a channel and then the data is moved from the buffer to the target. To write to a file from a source – the source data is moved into a buffer and then written to the file through a channel.
+======================================END========================================================================================
+2 day(s) ago  Comment

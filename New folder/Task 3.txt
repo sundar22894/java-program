@@ -1,0 +1,183 @@
+1.File IO
+
+
+File
+=====
+File is a software application that is used to store data. This can be of various types.
+
+Stream
+=======
+A Stream is a sequence of data. In java stream is composed of bytes. It is called stream, because the bytes in it flows like a natural stream of water.
+
+I java, there are 3 stream pre-defined for our ready made use:
+a)System.out--> standard streams of bytes are given as output
+b)System.in --> standard streams of bytes taken as input
+c)System.err--> standard streams of error bytes
+
+
+
+classes in Java for standard input and output
+-----------------------------------------------
+1. InputStream which is inherited in FileInputStream. This is used for performing any READ operation on any file.
+
+2. 1. OutputStream which is inherited in FileOutputStream. This is used for performing any WRITE operation on any file.
+
+
+
+
+
+
+
+
+
+
+package newpack;
+
+import java.io.*;
+public class IOExample {
+
+public static void main(String[] args)
+{
+try
+{
+FileOutputStream fos = new FileOutputStream("D:\\Koel\\FileDemo\\demo.txt");
+String s = "Sachin Tendulkar is my favorite player";//htfhyyhjg
+byte []sentence = s.getBytes();// 101010101101011101011
+fos.write(sentence);
+fos.close();
+
+}
+catch(Exception e)
+{
+
+}
+
+
+
+}
+
+}
+
+------------------------------
+append
+------------
+package newpack;
+
+import java.io.*;
+public class IOExample {
+
+public static void main(String[] args)
+{
+try
+{
+FileOutputStream fos = new FileOutputStream(("D:\\Koel\\FileDemo\\demo.txt"),true);
+String s = " He is a world famous player.";//htfhyyhjg
+byte []sentence = s.getBytes();// 101010101101011101011
+fos.write(sentence);
+fos.close();
+
+}
+catch(Exception e)
+{
+
+}
+
+
+
+}
+
+}
+========================================================================================
+package newpack;
+
+import java.io.*;
+public class IOExample {
+
+public static void main(String[] args)
+{
+try
+{
+FileInputStream fin = new FileInputStream("D:\\Koel\\FileDemo\\demo.txt");
+
+int i=0;
+while((i=fin.read())!= -1)//-1 is EOF
+{
+System.out.print((char)i);//type casting it to character type
+}
+
+
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+
+
+
+
+}
+
+}
+======================================================================
+package newpack;
+
+import java.io.*;
+
+public class FileCopy {
+
+public static void main(String[] args) 
+{
+char []c = new char[100];
+int cLen = c.length;
+
+try(FileReader fr = new FileReader("D:\\Koel\\FileDemo\\demo.txt");
+FileWriter fw = new FileWriter("D:\\Koel\\FileDemo\\demoCopy.txt"))
+{
+
+int count =0;// count variable will count the number of chars
+int read =0; //read will store each character in ascii form
+while((read=fr.read(c))!= -1)
+{
+if(read <cLen)
+fw.write(c);
+//fw.write(c, 0, read);
+/*else
+fw.write(c);*/
+count += read;
+}
+
+System.out.println("Wrote "+count+" chars");	
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+3 week(s) ago  Comment
+Koel-5678
+Koel.5678 https://gabrieletolomei.wordpress.com/miscellanea/operating-systems/multiprogramming-multiprocessing-multitasking-multithreading/ -> Multi-Threading, tasking, processing, programming
+
+https://www.youtube.com/watch?v=exbKr6fnoUw -> process VS thread
+
+http://www.javamadesoeasy.com/2015/03/threads-top-75-interview-questions-and_9.html -> Threads questions
+
+https://dzone.com/articles/threads-top-80-interview -> Thread question
+
+https://www.youtube.com/watch?v=_aNO6x8HXZ0&index=2&list=PLBB24CFB073F1048E -> Advanced Java: Multi-threading Part 2 -- Basic Thread Synchronization
+
+https://www.youtube.com/watch?v=lotAYC3hLVo&index=3&list=PLBB24CFB073F1048E -> Advanced Java: Multi-threading Part 3 -- The Synchronized Keyword
+3 week(s) ago  Comment

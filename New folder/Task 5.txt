@@ -1,0 +1,215 @@
+Koel-5678
+Koel.5678 Thread
+==========
+Commonly used Constructors of Thread class:
+========================================
+Thread()
+Thread(String name)
+Thread(Runnable r)
+Thread(Runnable r,String name)
+----------------------------------------------------
+Commonly used methods of Thread class:
+=======================================
+public void run(): is used to perform action for a thread.
+public void start(): starts the execution of the thread.JVM calls the run() method on the thread.
+public void sleep(long miliseconds): Causes the currently executing thread to sleep (temporarily cease execution) for the specified number of milliseconds.
+
+public void join(): waits for a thread to die.
+public void join(long miliseconds): waits for a thread to die for the specified miliseconds.
+public int getPriority(): returns the priority of the thread.
+public int setPriority(int priority): changes the priority of the thread.
+public String getName(): returns the name of the thread.
+public void setName(String name): changes the name of the thread.
+public Thread currentThread(): returns the reference of currently executing thread.
+public int getId(): returns the id of the thread.
+public Thread.State getState(): returns the state of the thread.
+public boolean isAlive(): tests if the thread is alive.
+public void yield(): causes the currently executing thread object to temporarily pause and allow other threads to execute.
+public void suspend(): is used to suspend the thread(depricated).
+public void resume(): is used to resume the suspended thread(depricated).
+public void stop(): is used to stop the thread(depricated).
+public boolean isDaemon(): tests if the thread is a daemon thread.
+public void setDaemon(boolean b): marks the thread as daemon or user thread.
+public void interrupt(): interrupts the thread.
+public boolean isInterrupted(): tests if the thread has been interrupted.
+public static boolean interrupted(): tests if the current thread has been interrupted.
+3 week(s) ago  Comment
+Koel-5678
+Koel.5678 
+
+https://www.youtube.com/watch?v=yqwQQnUW3p8&list=PL9DF6E4B45C36D411&index=34 -> Learn Java Tutorial for Beginners, Part 34: Handling Exceptions
+
+https://www.youtube.com/watch?v=5pPPtRtCBHw&index=35&list=PL9DF6E4B45C36D411 -> Learn Java Tutorial for Beginners, Part 35: Throwing Exceptions
+
+https://www.youtube.com/watch?v=odhReeuuCXo&list=PL9DF6E4B45C36D411&index=36 -> Learn Java Tutorial for Beginners, Part 36: Multiple Exceptions
+
+https://www.youtube.com/watch?v=EtMaHtZTlSc&list=PL9DF6E4B45C36D411&index=37 -> Learn Java Tutorial for Beginners, Part 37: Runtime Exceptions
+
+https://www.youtube.com/watch?v=nTn2YXxYO9Q&index=40&list=PL9DF6E4B45C36D411 -> Learn Java Tutorial for Beginners, Part 40: Java 7 Try With Resources
+
+https://www.youtube.com/watch?v=fsqo7Z4eKE4 -> Java tutorial for beginners - 50 - User defined exception
+3 week(s) ago  Comment
+Koel-5678
+Koel.5678 Exception
+===========
+package MyPack;
+
+public class ExceptionDemo {
+
+public static void main(String[] args) 
+{
+try// will ocntain the code that might raise error
+{
+int arr[]= new int[4];
+
+arr[5]=78/0;
+
+System.out.println(arr[5]);
+}
+catch(ArrayIndexOutOfBoundsException e)// handle the error
+{
+//e.printStackTrace();
+System.out.println(e.getMessage());
+}
+
+catch(ArithmeticException e)// handle the error
+{
+//e.printStackTrace();
+System.out.println(e.getMessage());
+}
+
+finally// will explicitly invoke gc() to clear the memory space
+{
+System.out.println("Memory cleared");
+}
+
+}
+
+}
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+package MyPack;
+
+public class ExceptionDemo {
+
+public static void main(String[] args) 
+{
+try
+{
+try
+{
+System.out.println("to be divided");
+int a = 78/0;
+}
+catch(ArithmeticException e)
+{
+System.out.println(e.getMessage());
+}
+
+try
+{
+int arr[] = new int[4];
+arr[5]=46;
+
+}
+catch(ArrayIndexOutOfBoundsException e)
+{System.out.println(e.getMessage());
+
+}
+
+}
+catch(Exception e)
+{
+System.out.println(e.getMessage());
+}
+
+
+
+
+}
+
+}
+
+
+------------------------------------------------
+throw
+======
+package MyPack;
+
+public class userDefinedEx {
+
+public static void main(String[] args)
+{
+int age=18;
+
+if(age < 20)
+{
+throw new ArithmeticException("not eligible");
+}
+else
+{
+System.out.println("valid");
+}
+
+
+}
+
+}
+-----------------------------------
+package MyPack;
+
+
+class MyOwnException extends Exception//[getMessage(msg)]
+{
+public MyOwnException(String msg)
+{
+super(msg);
+}
+}
+
+
+/*class ArithmeticException extends Exception
+{
+public ArithmeticException(String msg)
+{
+super(msg);
+}
+}*/
+public class userDefinedEx
+{
+static void studentAge(int age) throws MyOwnException
+{
+if(age < 20)
+
+throw new MyOwnException("not eligible");
+
+else
+{
+System.out.println("valid");
+}
+
+}
+
+public static void main(String[] args)
+{
+try
+{
+studentAge(13);
+
+}
+catch(MyOwnException e)
+{
+System.out.println(e.getMessage());
+}
+
+
+}
+
+}
+3 week(s) ago  Comment

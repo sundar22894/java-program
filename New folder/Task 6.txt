@@ -1,0 +1,81 @@
+Tasks till 30/03/2018
+= = = = = = = = = = = =
+1) Can abstract class have constructors in Java?
+2) Can abstract class implements interface in Java? do they require to implement all methods?
+3) Can abstract class be final in Java?
+4) Can abstract class have static methods in Java?
+5) Can you create instance of abstract class?
+6) Is it necessary for abstract class to have abstract method?
+7) Difference between abstract class and interface in Java?
+8) When do you favor abstract class over interface?
+9) What is abstract method in Java?
+10) Can abstract class contains main method in Java ?
+11) what is static block in java?
+12) What is the need of static block?
+13) Can we overload static methods in java?
+14) Can we call super class static methods from sub class?
+15)What is the difference between final and static keywords?
+16) Write a note on covariant return type with example code.
+17) Write a note on Enum with example code.
+18) Write a note on use of super keyword and super() method.
+19) Write a code to implement abstraction using interface.
+20)Write a Java program to sort a numeric array and a string array.
+21)Write a Java program to sum values of an array.
+22)Write a Java program to remove a specific element from an array.
+23)Write a Java program to reverse an array of integer values.
+24)Write a Java program to find the duplicate values of an array of integer values.
+
+3 week(s) ago  Comment
+JOTHI-12345
+JOTHI.12345 where to submit these tasks mam?
+3 week(s) ago 
+Koel-5678
+Koel.5678 https://www.youtube.com/watch?v=JTpSIpntne8 -> Singleton Design Pattern in Java
+
+https://www.youtube.com/watch?v=0jjNjXcYmAU -> Design Patterns - An introduction
+
+https://www.youtube.com/watch?v=mkCTxtLe7XU&list=PLB841C370FAFB8EC7 -> ArrayList: Java Collections Framework Tutorial Part 1
+
+https://www.youtube.com/watch?v=YmDbL_fCEII&index=2&list=PLB841C370FAFB8EC7 -> LinkedList and the List Interface: Java Collections Framework Tutorial Part 2
+
+https://www.youtube.com/watch?v=fZgO3R3V_jw&index=5&list=PLB841C370FAFB8EC7 -> Sets: Java Collections Framework Tutorial Part 5
+
+https://www.youtube.com/watch?v=-JOSjIan2g0&index=3&list=PLB841C370FAFB8EC7 -> HashMap: Java Collections Framework Tutorial Part 3
+
+https://www.youtube.com/watch?v=S5Kddwhqkto&index=4&list=PLB841C370FAFB8EC7 -> Sorted Maps and the Map Interface: Java Collections Framework Tutorial Part 4
+
+https://www.youtube.com/watch?v=PMLAs-b_fSY&list=PLB841C370FAFB8EC7&index=6 -> Using Your Own Objects in Sets and Maps: Java Collections Framework Tutorial Part 6
+
+https://www.youtube.com/watch?v=o9ZYhHdZJNY&index=10&list=PLB841C370FAFB8EC7 -> Using Iterators: Java Collections Framework Tutorial Part 10
+
+https://www.youtube.com/watch?v=zuSOhwdnyfU&list=PLB841C370FAFB8EC7&index=12 -> Deciding Which Java Collection to Use: Java Collections Framework Tutorial Part 12
+
+https://www.youtube.com/watch?v=S5Kddwhqkto&list=PLB841C370FAFB8EC7&index=4 -> Sorted Maps and the Map Interface: Java Collections Framework Tutorial Part 4
+
+https://www.youtube.com/watch?v=-JOSjIan2g0&index=3&list=PLB841C370FAFB8EC7 -> HashMap: Java Collections Framework Tutorial Part 3
+
+https://www.youtube.com/watch?v=S5Kddwhqkto&index=4&list=PLB841C370FAFB8EC7 -> Sorted Maps and the Map Interface: Java Collections Framework Tutorial Part 4
+
+https://www.youtube.com/watch?v=PMLAs-b_fSY&list=PLB841C370FAFB8EC7&index=6 -> Using Your Own Objects in Sets and Maps: Java Collections Framework Tutorial Part 6
+
+https://www.youtube.com/watch?v=QYvUmIYgsiA&list=PLB841C370FAFB8EC7&index=7 -> Sorting Lists using Comparators: Java Collections Framework Tutorial Part 7
+
+https://www.youtube.com/watch?v=OlMw3ecL1ow&index=8&list=PLB841C370FAFB8EC7 -> Natural Ordering and the Comparable Interface: Java Collections Framework Tutorial Part 8
+
+https://www.youtube.com/watch?v=KKN4zh7T3JE&index=9&list=PLB841C370FAFB8EC7 -> Queues: Java Collections Framework Tutorial Part 9
+
+https://www.youtube.com/watch?v=Va7zaaZVMjo&index=20&list=PL9DF6E4B45C36D411 -> Learn Java Tutorial for Beginners, Part 20: StringBuilder and String Formatting
+
+https://www.youtube.com/watch?v=49MCrx53BOI&list=PL9DF6E4B45C36D411&index=21 -> Learn Java Tutorial for Beginners, Part 21: toString() and the Object class
+
+https://www.youtube.com/watch?v=9fVQ_mvzV48 -> Dao Design Pattern
+
+https://www.youtube.com/watch?v=2vtERrC6NgI -> upcasting and downcasting
+
+https://www.youtube.com/watch?v=g-bhrBVc-A0 -> wrapper class
+
+https://www.youtube.com/watch?v=qJ5Dc8eLyqA -> type casting
+
+https://www.youtube.com/watch?v=0XL1NBUv2NU -> Data structure 
+
+3 week(s) ago  Comment

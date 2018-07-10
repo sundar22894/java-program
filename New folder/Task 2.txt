@@ -1,0 +1,109 @@
+Koel.5678 Today's topic for SLT
+====================
+1.JDBC
+2. String functions
+3. Pattern and Matcher 
+
+
+JDBC
+========
+Java Database Connectivity is a technology that enables us to connect our java application with any database.
+
+Database
+=============
+Database is a software server used to store data in a very organized fashion. This type of softwares are the primary tool for any company because the most important weapon for a company it having all data and information. To store, retrieve and analyse these data we need aproper software . Thus we use Database Server software. However, this software understands a diiferent language called Structured Query Language.
+
+SQL
+=======
+1. DQL--> Data Query Language--> SELECT
+
+select * from student
+-------------------------------------------------------------------------------------------
+
+2. DML--> Data Manipulation Language--> INSERT, UPDATE, DELETE
+
+insert into Student values(103,'Samuel')
+
+-------------------------------------------------------------------------------------------------
+3. DDL--> Data Definition Language--> CREATE,ALTER,DROP,TRUNCATE
+
+create table Student
+(
+id int,
+name varchar(50)
+)
+-------------------------------------------------------------------------------
+4. DCL--> Data Control Language--> GRANT, REVOKE
+
+***********************************************************************************
+
+
+JDBC APIs have few important interfaces that help us to connect our application with database and perform data operation.
+
+
+
+1. DriverManager class
+------------------------------------------
+This class is responsible for identifying the driver of a particular database server software and integrate it with the java application.
+
+2.Connection Interface
+--------------------------------------
+This connection interface is the session between java application and the database. The connection interface instance will hold the refernce to the database instance. This interface is a factory of Statement interface object. This connection interface provides methods for operations on database like commit/rollback etc.
+
+
+3. Statment Interface
+------------------------------------------------
+This provides methods to execute queries in the database:
+
+a. executeQuery()--> for executing DQL
+
+b. execute()--> for executing DQL that returns multiplr results.
+
+c. executeUpdate()-->for executing DDL/DML syntax.
+
+
+4. ResultSet Interface
+---------------------------------
+This interface maintains a cursor pointing to a row of a table that has been returned in any stamement interface instance.
+
+
+
+*************************************************************************************************************
+
+package newpack;
+import java.sql.*;//JDBC API
+
+public class JDBCDemo
+{
+
+public static void main(String[] args) 
+{
+
+String url="jdbc:h2:tcp://localhost//Cloudscape/mt";
+String username="sa";
+String password="";
+String query="select * from student";
+
+try(Connection con = DriverManager.getConnection(url,username,password);
+Statement stmt = con.createStatement();
+ResultSet rs = stmt.executeQuery(query)	)
+{
+while(rs.next())
+{
+String col1= rs.getString(1);
+String col2=rs.getString(2);
+System.out.println(col1+ " "+ col2);
+}
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+
+
+}
+
+}
+
+
+1 week, 6 day(s) ago  Comment
