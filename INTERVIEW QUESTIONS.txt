@@ -1,0 +1,21 @@
+Cart Controller Questions
+
+1) What is the use of @Controller annotation?
+
+2) What is the user of @Autowired annotation?
+
+3) What is the annotation?
+
+4) What is @RequestMapping annotation? What are the attributes there in it?
+
+5) What is the use of Model parameter in the method?
+
+6) What is list type of collection.
+
+7) What is the difference between set and list type of collection.
+
+8) What is HttpSession?
+
+9) What is difference between @pathVariable and @RequestParam annotation?
+
+     - ANY ANSWER YOU SHOULD ABLE TO TELL AT LEAST FOR 2 MINUTES

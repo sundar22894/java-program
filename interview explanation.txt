@@ -1,0 +1,137 @@
+Placement Papers :: Infosys
+Home » Interview Questions » Placement Papers » Infosys » View Paper
+
+ 
+Infosys Interview Experience - Bangalore 3rd, 4th April - 2018
+Posted By : Abhay Rating : +21, -1
+VTU CPC Drive:
+
+Position: System Engineer.
+CTC: 3.25 lakh.
+Eligibility criteria: 70% and above in 10th, 12th and B.E with no active backlogs(VTU affiliated colleges only).
+
+The drive took place on 3rd and 4th April 2018 at Vemana Institute of Technology, Bangalore, Karnataka.
+
+DAY 1(WRITTEN TEST):
+
+1st day there was only written test, we were asked to assemble at 8am at the college. There were about 600 people from about 40-50 colleges across bangalore affiliated to VTU. The test was conducted in 3 batches.
+
+The test consisted of 3 sections- Quants, Logical and Verbal. You can shift between questions in the same section, but can't shift between sections.
+
+QUANTS- 10 questions, 3-4 questions were easy which could be solved in under a minute and the rest 6-7 questions were difficult( the questions from different topics were combined- for example the clocks and speed and time were combined into 1 question, and mixture and alligation and profit and loss were combined into 1 question). The cutoff for quants is 6 or 7 out of 10, you get around 35 minutes(not sure) for these 10 questions.
+
+LOGICAL - 15 questions, the questions were based on arrangements and data interpretation( these questions are very easy to solve, but require some time to solve). Focus on data interpretation question, they will be 5 questions on this and solve arrangement questions at last, since these questions you can go wrong. The cutoff for this section is 10 out of 15. This section is comparatively easy.
+
+VERBAL - 40 questions, the questions were based on paragraphs, sentence correction, synonyms, etc. This section is also difficult, focus on solving sentence correction and synonym questions at first, then at last focus on the paragraph questions( Don't read entire paragraph, see the questions and try to solve).
+
+The cutoff for this section is 20 out of 40.
+
+The Infosys written test is moderate to difficult level ( Not easy like AMCAT).
+
+The results were announced at 5:30 pm the same day. Out of 600 people, around 90-100 people were shortlisted for next round which was scheduled for next day. Fortunately I was also shortlisted(To be honest I was sure I wouldn't be shortlisted ). Shortlisted people were asked to assemble at the same place at 8:30 am next day. We were told there would be only HR interview next day.
+
+DAY 2 (INTERVIEWS):
+
+We assembled at 8:30 am at the same venue. The documents were verified first(photocopies of all educational mark sheet). The interviews started at 11 am. The interviews was like technical and HR combined. For some people there was separate technical and HR round( For me) and for some people there was only technical round. My name was called around 1:30 pm for technical interview. 
+
+Questions asked to me were.
+
+Which is favourite subject in CS?( I am from CS branch).
+I answered C++.
+Whats is OOPS concept?
+Told( Definition of Abstraction,  Encapsulation, Inheritance and Polymorphism).
+Asked about my projects( I had done 2).
+Explained in detail.
+
+Asked me to write a SQL query that displays marks with count of students who scored that much marks.( Example 100 marks - 20 students, 90 marks - 40 students like that).
+Wrote. (select count(*),marks from student group by marks; ( not sure whether it is correct or not)).
+
+What is IoT and name some applications? ( I had attended a workshop on IoT, so this question was asked).
+Told.
+
+I had put trekking as my hobby, he asked me there was a mishap that occurred recently regarding trekking.
+
+Told( A forest fire at Tamil Nadu, where some people went for trekking where permission was denied, and they lighted fire which triggered forest fire, and many people had died.) 
+He asked if I have any questions for him?
+Asked.
+
+Thanked him and left. The interview went quite well(The questions were mainly asked on what you have given in resume( so prepare resume correctly and don't lie in it, and prepare for projects well).  I was called for HR round after 5 mins. 
+
+HR asked me to introduce myself.
+Did.
+
+I had told hardworking and loyal as my strength, she asked me to give me an example how I was hardworking and loyal.
+
+Gave example.
+
+And it went on like this and she asked some other questions, I answered. And I thanked her and the interview got over. The results were announced at 5 pm. There were 72 selects out of 90-100 people. I was also one of them :). 
+
+So main thing about Infosys is clearing the first round( which is quite difficult) and the interviews are quite easy( and not much elimination takes place here( 72 out of 90-100)).
+
+All the best!
+Like this page? +21     -1
+
+
+ 
+
+ 
+Read more papers:
+Infosys Interview Experience - Bangalore 3rd, 4th April - 2018
+Infosys Interview Pattern - Pune 24-03-2018
+Infosys Operation Executive Interview Experience - Visakhapatnam, Andhra Pradesh & Jan 24th, 25th 2017
+Infosys Interview Experience - I.I.E.S.T, Shibpur.
+Infosys Interview Experience - Sona College of Technology, Salem - October 11th and 12th 2017
+Infosys Interview Experience - Jaypee university of engineering and technology, Guna
+Infosys Interview Experience - Rajasthan Technical University, Kota(Sept-28-29-2017)
+Infosys Interview Experience - Mumbai - 12&13 Sept 2017
+Infosys Interview Experience - Hubballi, 19th & 20th September 2017
+Infosys Interview Experience - G.H Patel College of Engg. and Tech(GCET)
+Infosys Interview Experience - Chennai and 10/09/2017
+Infosys Interview Experience - Haldia Institute of technology, Kolkata, 7th sept 2017
+Infosys Campus Recruitment : Selection Process & Exam Pattern - Bangalore, August 2017
+Infosys Interview Experience - Haldia, Kolkata (04 - 05 Sept. 2017)
+Infosys ltd Interview Experience - 30th November 2017, Kolkata
+Infosys Interview Experience - NIT Raipur, 17 and 18 October 2016
+Infosys Interview Experience - Rajpura, 31 Jan 2017
+Infosys and Accenture - VSSUT, UCE burla 10/10/2016
+Infosys Interview Experience - Vijayawada, 14-NOV-2016
+Infosys Interview Experience - Sinhgad institute, Pune 21st September 2016
+Infosys Interview Experience - Poornima Jaipur, 19-20 Oct, 2016
+Infosys Interview Process - 27 Sept 2016
+Infosys Interview Experience - Chennai
+Infosys Interview Experience - GLA University, Mathura & 24/09/2016
+Infosys Interview Pattern - Madurai - 18/9/16
+Infosys Interview Experience - Galgotias University/22 September 2016
+Infosys Interview Experience - Mangalore, 26 September, 2016
+Infosys Interview Experience - Galgotias College of Engineering And Technology, Greater Noida: 21-22 Sept 2016
+Infosys Interview Process - CVRCE, Bhubaneswar on 18.09.2016
+Infosys Interview Experience - Jaipur 01/10/2016
+Infosys Interview Process - KL UNIVERSITY SEPT 13th, 2016
+Infosys Interview Process - Mumbai, 28th and 29th Sept 2016.
+Infosys Interview Experience - Sept 19, 2016
+Infosys Interview Experience - Berhampur, Odisha 22nd Sept, 2016
+Infosys Interview Experience - Bhubaneswar, 10-09-16.
+Infosys Interview Experience - 3rd Sept 2016, Pune
+Infosys Interview Experience - Mumbai 03/08/2016
+Infosys Interview Experience - Guntur, JKC off-campus drive 8-1-2016
+Infosys Interview Experience - K.L.University, September 14 2015
+Infosys Interview Experience - Jaypee University of Engg. and Tech., Guna, Sept 17 2015.
+Infosys Interview Experience - Vizag, January 21, 2016
+Infosys Interview Experience - Hubli, Jan 6th, 2016
+Infosys Technologies Interview Experience - Coimbatore, December 7 & 19, 2015
+Infosys Interview Experience - 28 September 2014
+Infosys Interview Experience - Techno India, Salt-Lake Sector V-Kolkata, November 24th-25th, 2015
+Infosys Interview Experience - Visakhapatnam, Sep 28 2015
+Infosys Interview Experience - Hyderabad, 23 October 2015
+Infosys Interview Experience - THAPAR UNIVERSITY, PATIALA 20-11-2015
+Infosys Interview Experience - Visakhapatam, 17 October 2015
+Infosys Interview Experience - Faridabad, October 27, 2015
+Companies List:
+3i Infotech - AAI - ABACUS - ABB - Accel Frontline - Accenture - Aditi - Adobe - ADP - Agreeya - Akamai - Alcatel Lucent - Allfon - Alumnus - Amazon - Amdocs - AMI - Andhra Bank - AppLabs - Apps Associates - Aricent - Ashok Leyland - Aspire - Atos Origin - Axes - Bajaj - Bank of Maharashtra - BEL - BEML - BHEL - BirlaSoft - Blue Dart - Blue Star - BOB - BPCL - BPL - Brakes - BSNL - C-DOT - Cadence - Calsoft - Canara Bank - Canarys - Capgemini - Caritor - Caterpillar - CDAC - CGI - Changepond - Ciena - Cisco - Citicorp - CMC - Consagous - Convergys - CORDYS - Crompton - CSC - CTS - Cummins - Dell - Deloitte - Delphi-TVS - DeShaw - Deutsche - Dotcom - DRDO - EDS - EIL - ELGI - ELICO - ERICSSON - Essar - Fidelity - Flextronics - Freescale - FXLabs - GAIL - GE - Genpact - Geodesic - Geometric - Globaledge - GlobalLogic - Godrej - Google - Grapecity - HAL - HCL - Hexaware - Honeywell - HP - HPCL - HSBC - Huawei - Hughes - IBM - IBS - ICICI - iGate - Impetus - iNautix - Indian Airforce - Indian Airlines - Infosys - Infotech - Intec - Integra - Intergraph - IOCL - iSOFT - ISRO - Ittiam - JSW - Keane - Kenexa - L & T - L & T Infotech - LG Soft - Lifetree - LionBridge - Mahindra Satyam - Mastek - Maveric - McAfee - MECON - Microsoft - MindTree - Miraclesoft - Mistral - Motorola - Mphasis - MTNL - NIC - Nokia Siemens - Novell - NTPC - Nucleus - ORACLE - Patni - Perot - Polaris - Ramco - Robert Bosch - Samsung - SAP - Sapient - Sasken - SBI - Sierra Atlantic - Sonata - Sony India - Sutherland - Syntel - TCS - Tech Mahindra - VeriFone - Virtusa - Wipro - Zensar.
+
+Current Affairs 2018
+Interview Questions and Answers
+
+ 
+
+ 

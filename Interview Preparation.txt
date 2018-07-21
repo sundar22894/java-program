@@ -1,0 +1,7 @@
+1-collection and generics
+2-spring
+3-hibernate
+4-sql
+5-angular jsp
+6-polymorphism
+7-oop concepts
